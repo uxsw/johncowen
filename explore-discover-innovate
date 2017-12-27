@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Explore Discover Innovate | Stop Hallucinating</title>
+        <meta name="description" content="A small creative process I completed on the theme of Exploration">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssnormalize/cssnormalize-min.css">
+		<link rel="stylesheet" type="text/css" href="css/me-styles.css">
+        <script src="//use.typekit.net/pnw7jhg.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    </head>
+    <body class="f">
+
+       <div class="branding">
+  <header class="wrapper">
+  	<a href="http://johncowen.co.uk" title="home">
+    <img src="https://pbs.twimg.com/profile_images/378800000793766528/038156ca04a0e309792faf2cce97fec0_200x200.jpeg" alt="John Cowen" class="header-avatar animated bounceInUp">
+    <div class="bio">
+      <h1>John Cowen</h1>
+      <h2>User Experience &bull; Design &bull; Creativity</h2>
+    </div><!--/bio-->
+	</a>
+  </header>
+</div><!--/branding-->         <div class="contact-bar">
+    <ul class="nav nav--contact">
+        <li><a href="http://johncowen.co.uk" title="Home Page">Home</a></li>
+        <li><a href="/blog" title="Read Blog.">Blog</a></li>
+    </ul>
+ </div>        <div class="main-container">
+
+		
+            <div class="main wrapper">
+
+                <div class="article-heading">
+
+                    
+                    <h1>Explore Discover Innovate /</h1>
+<p class="header serif">As a small change from my normal web and UX, I decided to flex my creative skills with a series of prints on the theme of Exploration.</p>
+<p class="header serif">The aim of the series was to remember the enduring motivation humans have had for exploring our environment. From this spirit of exploration we have made discoveries and been forced to innovate to reach our goals. The prints give a nod to the sublime with expansive landscapes still untamed by civilisation.</p>
+
+<p>The process of creating this series of prints was the basis for my talk at the <a href="http://digpen.com/" title="Digpen website" target="_blank">Digpen conference</a> last year: The Creative Process / Stop Hallucinating. A version of which is <a href="https://medium.com/@john_cowen/stop-hallucinating-39a8cc9258f4" title="Stop Hallucinating on Medium">available to read online</a>.</p>
+
+                    </div>
+               
+
+<ul class="edi__grid">
+<li><img src="img/balloon_small.jpg" alt="Taking Flight" />
+<p><span class="left"><small>Taking Flight</small></span>
+</p></li>
+<li><img src="img/camp_small.jpg" alt="Set Camp" />
+<p><span class="left"><small>Set Camp</small></span>
+</p></li>
+<li><img src="img/canoe_small.jpg" alt="By Canoe" />
+<p><span class="left"><small>By Canoe</small></span>
+</p></li>
+<li><img src="img/climb_small.jpg" alt="Climbing On" />
+<p><span class="left"><small>Climbing On</small></span>
+</p></li>
+<li><img src="img/forest_small.jpg" alt="The Walk" />
+<p><span class="left"><small>The Walk</small></span>
+</p></li>
+<li><img src="img/mountain_small.jpg" alt="Conquered Summit" />
+<p><span class="left"><small>Conquered Summit</small></span>
+</p></li>
+<li><img src="img/sled_small.jpg" alt="By Sled" />
+<p><span class="left"><small>By Sled</small></span>
+<li><img src="img/train_small.jpg" alt="By Train" />
+<p><span class="left"><small>By Train</small></span>
+</ul>
+				<ul class="list__inline">
+                        <li><a href="mailto:john@johncowen.co.uk" title="Email me" class="btn--contact btn">Contact Me</a></li>
+                        <li><a href="https://www.linkedin.com/in/cowenjohn" title="Linked In" class="btn--linkedin btn"><span class="icon-linkedin"></span> Connect on Linked-in</a></li>
+                        <li><a href="/" title="Home page" class="btn--contact btn">Home Page</a></li>
+                    </ul>
+                   
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <div class="contact-bar">
+            	<ul class="nav nav--contact">
+            		
+            		<li><span class="label">twitter</span> <a href="https://twitter.com/john_cowen" title="Twitter @john_cowen" class="grow">@john_cowen</a></li>
+            		<li><span class="label">connect</span> <a href="http://uk.linkedin.com/in/cowenjohn" title="John Cowen LinkedIn" class="grow">LinkedIn</a></li>
+            	</ul>
+            </div>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/front/try/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54243948-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+       </body>
+</html>
