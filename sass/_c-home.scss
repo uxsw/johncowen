@@ -1,0 +1,142 @@
+.c-block {
+    margin-left: $unit;
+    margin-right: $unit;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 0;
+        margin-right: 2*$unit;
+        width: 200px;
+    }
+}
+
+.c-home-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+    }
+}
+
+.c-image-zoom {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    > img {
+        margin-top: -3rem;
+        max-width: none;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+            max-width: 100%;
+            position: absolute;
+            width: 100%;
+        }
+    }
+}
+
+.c-text-just-col {
+    border-bottom: 20px solid $color-white;
+    font-size: 0.85rem;
+    hyphens: auto;
+    padding-bottom: $unit;
+    text-align: justify;
+
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.more {
+    background-color: $color-black;
+    color: $color-white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2*$unit 3.5*$unit 2*$unit;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        padding-bottom: 2*$unit;
+        padding-top: 3*$unit;
+    }
+}
+
+.m2ee {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2*$unit;
+
+        >p {
+        width: calc(50% - 1rem);
+        }
+    }
+    
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    overflow: hidden;
+
+    @media screen and(min-width: 768px) {
+        flex-wrap: nowrap;
+    }
+}
+
+.bio-head:before {
+    background-color: $color-black;
+    content: '';
+    display: block;
+    height: 1vw;
+    margin: 2*$unit 0 $unit 0;
+    width: 8.5vw;
+}
+
+.first {
+    width: 100%;
+
+    @media screen and(min-width: 768px) {
+        width: 61.8%;
+    }
+
+    > p {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        @media screen and(min-width: 768px) {
+            margin-left: 3vw;
+            width: 61.8%;
+        }
+    }
+}
+
+.second {
+    background-color: $color-black;
+    color: white;
+    content: ' ';
+    flex: 1;
+    padding: 2rem 2rem 2rem;
+
+    @media screen and(min-width: 768px) {
+        padding-top: 35vw;
+    }
+
+    > p {
+        font-family: $font-sans;
+        font-size: 16px;
+    }
+}
+       

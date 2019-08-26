@@ -1,0 +1,55 @@
+.c-page-heading {
+  color: $color-white;
+  margin-left: -25%;
+  text-align: left;
+
+  &__title {
+    font-size: 0.85rem;
+    line-height: 1;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+.asize-a3-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: $unit;
+  padding: $unit;
+
+  img {
+    width: 100%;
+  }
+}
+
+.asize-a2-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $unit;
+  padding: $unit;
+
+  img {
+    width: 100%;
+  }
+}
+
+.asize-double-col {
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+
+   > img {
+    width: 100%;
+   }
+}
+
+.asize-pano {
+  grid-column: auto / span 2;
+  overflow: hidden;
+
+  > img {
+    width: 100%;
+  }
+}
