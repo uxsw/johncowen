@@ -1,87 +1,625 @@
 
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>John Cowen - UX Designer</title>
-        <meta name="description" content="User Experience design consultant based in Exeter (UK) - no longer available for freelance projects.">
-        <meta name="viewport" content="width=device-width">
+<!DOCTYPE html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>John Cowen - Art and Industry</title>
+    <meta name="description" content="I need to write something here">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Righteous&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 
-        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssnormalize/cssnormalize-min.css">
-		<link rel="stylesheet" type="text/css" href="css/me-styles.css">
-    </head>
-    <body class="f">
+    <script src="js/photo-swipe.min.js"></script>
+    <script src="js/photo-swipe-ui.min.js"></script>
+  </head>
+  <body>
 
-     <div class="branding">
-  <header class="wrapper">
-  	<a href="http://johncowen.co.uk" title="home">
-    <img src="https://pbs.twimg.com/profile_images/378800000793766528/038156ca04a0e309792faf2cce97fec0_200x200.jpeg" alt="John Cowen" class="header-avatar animated bounceInUp">
-    <div class="bio">
-      <h1>John Cowen</h1>
-      <h2>User Experience &bull; Design &bull; Creativity</h2>
-    </div><!--/bio-->
-	</a>
-  </header>
-</div><!--/branding-->         <div class="contact-bar">
-    <ul class="nav nav--contact">
-        <li><a href="http://johncowen.co.uk" title="Home Page">Home</a></li>
+    <div class="o-content">
+      <div class="o-content__body c-site-lead o-fb">
+        <div>
+            <h1 class="o-pica">John Cowen</h1>
+            <p class="c-page-heading__subtitle u-hard-bottom">Artist &amp; designer</p>
+        </div>
+        <div style="margin-left: auto;">
+            <a href="mailto:john@johncowen.co.uk" class="u-push-right">
+                <svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"/></svg>
+            </a>
+            <a href="https://twitter.com/john_cowen" target="_blank" class="u-push-right">
+                <svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" fill="#000"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/cowenjohn/?originalSubdomain=uk" target="_blank" class="is-social">
+                <svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" fill="#000"/></svg>
+            </a>
+        </div>
+      </div>
+    </div>
 
-    </ul>
- </div>        <div class="main-container">
+    <div class="o-content">
+        <div class="o-content__body">
 
-		
-            <div class="main wrapper">
-                <div class="mini-heading">
-                    <p><p><b>Hello</b></p>
-<p>I’m John, a User Experience and website designer based in Exeter.</p></p>              
-                    <ul class="list__inline">
-                        <li><a href="mailto:john@johncowen.co.uk" title="Email me" class="btn--contact btn">Contact Me</a></li>
-                        <li><a href="https://www.linkedin.com/in/cowenjohn" title="Linked In" class="btn--linkedin btn"><span class="icon-linkedin"></span> Connect on Linked-in</a></li>
-                    </ul>
-                </div><!--/mini-heading-->
-
-                <h3 class="heading--1 with-border">Design &amp; Creative Thinking</h3>
-                <div class="mini-heading">
+            <div style="max-width: 800px; margin-bottom: 2rem;">
+                <h2 class="o-kickr has-link"><a href="https://www.linkedin.com/in/cowenjohn/?originalSubdomain=uk" target="_blank">Design and creative thinking</a></h2>
                 <p>I hold a fascination for all aspects of design, from theoretical design down to the nuts and bolts of production-ready HTML &amp; CSS. I am invested in research, workshops, presentations and conferences that have all blossomed from the simple pursuit of applying creativity to interaction design.</p>
-                <h4 class="heading--2">Stop Halluctinating</h4>
-                <p>I presented this case study on a creative project at the well-respected industry <a href="http://digpen.com/" title="Digpen website" target="_blank">Digpen conference</a> last year.</p>
+            </div>
+
+            <!--p>Currently Head of Design at Funeral Guide. We're a fast growing startup providing online resources to the bereaved and helping them choose a funeral director and Sass services to the funeral profession for running their businesses. I lead a diverse design team working on product design from research, user experience, interface design, illustration, writing HTML and SCSS for large scale applications, developing design systems and providing the team with guidance on vision and strategy for the products.</p-->
+
+            <h2 class="o-kickr">Art projects</h2>
+        </div>
+    </div>
+
+    <div class="o-content">
+        <div class="o-content__body o-heading--feature">
+            <h2 class="o-paragon">Human nature</h2>
+            <p style="display: inline-block; border-bottom: 1px solid; margin-bottom: 2rem;">Exhibition at AWEsome Art Space in Exeter. May 2020</p>
+            <div class="o-fb">
+                <div class="u-push-right">
+                    <svg width="90" height="151" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 151" style="display: block" class="c-big-cap">
+                    <path d="M44.588 1.4c19.944 0 33.258 9.067 39.943 27.2 1.449 3.733 2.451 8.033 3.008 12.9.558 4.867.836 11.1.836 18.7v29.2c0 6.933-.306 12.9-.92 17.9-.612 5-1.587 9.567-2.924 13.7-3.231 9.467-8.245 16.7-15.041 21.7-6.797 5-15.098 7.5-24.902 7.5-19.945 0-33.259-9.067-39.944-27.2-1.449-3.733-2.451-8.033-3.008-12.9C1.079 105.233.8 99 .8 91.4V62.2c0-6.933.306-12.9.92-17.9.612-5 1.587-9.567 2.924-13.7 3.231-9.467 8.245-16.7 15.041-21.7 6.797-5 15.098-7.5 24.903-7.5zm0 21.4c-8.245 0-14.123 2.8-17.632 8.4-3.51 5.6-5.265 14.867-5.265 27.8v33.6c0 12.933 1.755 22.2 5.265 27.8 3.51 5.6 9.387 8.4 17.632 8.4 8.245 0 14.122-2.8 17.632-8.4 3.51-5.6 5.264-14.867 5.264-27.8V59c0-12.933-1.755-22.2-5.264-27.8-3.51-5.6-9.387-8.4-17.632-8.4z" fill="#d02020" fill-rule="evenodd" />
+                    </svg>
+                </div>
+                <div style="max-width: 800px;">
+                    <p>
+                        <span class="u-hidden">O</span>ur planet is changing. Climate breakdown is a big concern of mine. That there is not a greater sense of urgency about it, around the world, also concerns me. My drawings explore the symbiotic relationship between nature and man made.
+                    </p>
+                    <p>Each drawing is an imagined map. Up close you recognise the familiar patterns of roads and buildings. From a distance the maps look like organic patterns, lichen, animal hide or cells.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="o-content u-push-bottom--large">
+        <div class="c-gallery__grid js-gallery o-content__body">
+
+            <a href="img/anthropocene.jpg" data-size="2000x999" data-med="img/anthropocene_t.jpg" data-med-size="500x250" class="js-gallery__img--main c-gallery__item is-12-cols">
+                <img src="img/anthropocene.jpg" alt="Anthropocene" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Anthropocene</h4>
+                        <span class="is-date">2020</span>
+                        <span class="is-size">1260 x 594mm</span>
+                        <span class="is-media">Ink on paper</span>
                     </div>
-                 <ul class="list__inline">
+                </figure>
+            </a>
 
-                        <li><a href="explore-discover-innovate.html" title="Explore Discover Innovate" class="btn btn--contact">View the illustrations</a></li>
-                        <li><a href="https://medium.com/@john_cowen/stop-hallucinating-39a8cc9258f4" title="Stop Hallucinating on Medium" class="btn btn--contact">Read about the creative process involved in this project</a></li>
-                    </ul>
+            <a href="img/routes-to-market.jpg" data-size="2000x710" data-med="img/routes-to-market_t.jpg" data-med-size="600x213" data-author="John Cowen" class="js-gallery__img--main c-gallery__item is-8-cols">
+                <img src="img/routes-to-market.jpg" alt="Routes to market" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Routes to market</h4>
+                        <span class="is-date">2019 - 2020</span>
+                        <span class="is-size">840 x 297mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
 
-                <p><img src="img/edi-home.jpg" alt="Stop Hallucinating"></p>
-    
+            <a href="img/promised-land.jpg" data-size="1500x1059" data-med="img/promised-land_t.jpg" data-med-size="500x353" data-author="John Cowen" class="js-gallery__img--main c-gallery__item">
+                <img src="img/promised-land_t.jpg" alt="Promised land" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Promised land</h4>
+                        <span class="is-date">2018</span>
+                        <span class="is-size">420 x 297mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
 
-				
-                   
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
 
-        <div class="footer-container">
-            <footer class="wrapper">
-                <div class="contact-bar">
- </div>            </footer>
+
+            <a href="img/hometurf2.jpg" data-size="1500x1060" data-med="img/hometurf2_t.jpg" data-med-size="500x353" data-author="John Cowen" class="js-gallery__img--main c-gallery__item">
+                <img src="img/hometurf2_t.jpg" alt="Hometurf II" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Hometurf II</h4>
+                        <span class="is-date">2017</span>
+                        <span class="is-size">420 x 297mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
+
+            <a href="img/hometurf.jpg" data-size="1500x1059" data-med="img/hometurf_t.jpg" data-med-size="500x353" data-author="John Cowen" class="js-gallery__img--main c-gallery__item">
+                <img src="img/hometurf_t.jpg" alt="Hometurf" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Hometurf</h4>
+                        <span class="is-date">2017</span>
+                        <span class="is-size">420 x 297mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
+
+            <a href="img/zombie.jpg" data-size="1500x1063" data-med="img/zombie_t.jpg" data-med-size="500x354" data-author="John Cowen" class="js-gallery__img--main c-gallery__item">
+                <img src="img/zombie_t.jpg" alt="Zombie" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Zombie</h4>
+                        <span class="is-date">2019</span>
+                        <span class="is-size">420 x 297mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
+
+            <a href="img/tipping-point.jpg" data-size="1500x1064" data-med="img/tipping-point_t.jpg" data-med-size="500x354" data-author="John Cowen" class="js-gallery__img--main c-gallery__item">
+                <img src="img/tipping-point_t.jpg" alt="Tipping point" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Tipping point</h4>
+                        <span class="is-date">2019</span>
+                        <span class="is-size">420 x 297mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
+
+            <a href="img/process.jpg" data-size="1500x1058" data-med="img/process_t.jpg" data-med-size="500x354" data-author="John Cowen" class="js-gallery__img--main c-gallery__item">
+                <img src="img/process_t.jpg" alt="Process" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Process</h4>
+                        <span class="is-date">2018</span>
+                        <span class="is-size">420 x 297mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
+
+            <a href="img/protection.jpg" data-size="1500x1059" data-med="img/protection_t.jpg" data-med-size="500x353" data-author="John Cowen" class="js-gallery__img--main c-gallery__item">
+                <img src="img/protection_t.jpg" alt="" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Protection</h4>
+                        <span class="is-date">2018</span>
+                        <span class="is-size">420 x 297mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
+
+            <a href="img/eremocine.jpg" data-size="2000x1468" data-med="img/eremocine_t.jpg" data-med-size="500x367" data-author="John Cowen" class="js-gallery__img--main c-gallery__item is-6-cols">
+                <img src="img/eremocine_t.jpg" alt="Eremocine" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Eremocine</h4>
+                        <span class="is-date">2019</span>
+                        <span class="is-size">594 x 420mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
+
+            <a href="img/action-reaction.jpg" data-size="2000x1401" data-med="img/action-reaction_t.jpg" data-med-size="500x357" data-author="John Cowen" class="js-gallery__img--main c-gallery__item is-6-cols">
+                <img src="img/action-reaction_t.jpg" alt="Action and reaction" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Action &amp; reaction</h4>
+                        <span class="is-date">2019</span>
+                        <span class="is-size">594 x 420mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
+
+            <a href="img/cycle.jpg" data-size="1500x1059" data-med="img/cycle_t.jpg" data-med-size="500x353" data-author="John Cowen" class="js-gallery__img--main c-gallery__item">
+                <img src="img/cycle_t.jpg" alt="Cycle" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Cycle</h4>
+                        <span class="is-date">2018</span>
+                        <span class="is-size">420 x 297mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
+
+            <a href="img/circular-system.jpg" data-size="1500x1060" data-med="img/circular-system_t.jpg" data-med-size="500x353" data-author="John Cowen" class="js-gallery__img--main c-gallery__item">
+                <img src="img/circular-system_t.jpg" alt="Circular systems" />
+                <figure class="c-gallery__figure">
+                    <div class="c-gallery__caption">
+                        <h4  class="is-title">Circular systems</h4>
+                        <span class="is-date">2019</span>
+                        <span class="is-size">420 x 297mm</span>
+                        <span class="is-media">Ink on paper</span>
+                    </div>
+                </figure>
+            </a>
+
+
+        </div>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/front/try/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
 
-  ga('create', 'UA-54243948-1', 'auto');
-  ga('send', 'pageview');
+            <div class="pswp__top-bar">
 
-</script>
+                <!--  Controls are self-explanatory. Order can be changed. -->
 
-       </body>
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="o-content">
+    <div class="o-content__body">
+        <div class="o-heading--feature">
+            <h3 class="o-short-paragon">Explore Discover Innovate</h3>
+            <div class="o-fb" style="max-width: 800px;">
+                <div class="o-dropcap">A</div>
+                <div>
+                    <p><span class="u-hidden">A</span>n illustrated series remembering the enduring motivation humans have had for exploring our environment.</p>
+                    <p>From this spirit of exploration we have made discoveries and been forced to innovate to reach our goals. The prints give a nod to the sublime with expansive landscapes still untamed by civilisation.</p>
+
+                    <p class="u-hard-bottom"><a href="/explore-discover-innovate.html" style="color: #fff; border-bottom: 1px solid;">View all <svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1600 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293h-704q-52 0-84.5-37.5t-32.5-90.5v-128q0-53 32.5-90.5t84.5-37.5h704l-293-294q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z" fill="#fff"/></svg></a></p>
+                </div>
+            </div>
+        </div>
+        <img src="https://johncowen.co.uk/img/edi-home.jpg" alt="Explore Discover Innovate" />
+        <p><a href="/explore-discover-innovate.html" style="border-bottom: 1px solid;">View all <svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1600 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293h-704q-52 0-84.5-37.5t-32.5-90.5v-128q0-53 32.5-90.5t84.5-37.5h704l-293-294q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z" fill="#E34A23"/></svg></a></p>
+    </div>
+</div>
+
+<div class="c-footer">
+    <a href="https://twitter.com/john_cowen" target="_blank" class="is-social">
+        <svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" fill="#fff"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/cowenjohn/?originalSubdomain=uk" target="_blank" class="is-social">
+        <svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" fill="#fff"/></svg>
+    </a>
+    <div>
+        All content copyright John Cowen 2020
+    </div>
+</div>
+<script type="text/javascript">
+    (function() {
+
+		var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+			var parseThumbnailElements = function(el) {
+			    var thumbElements = el.childNodes,
+			        numNodes = thumbElements.length,
+			        items = [],
+			        el,
+			        childElements,
+			        thumbnailEl,
+			        size,
+			        item;
+
+			    for(var i = 0; i < numNodes; i++) {
+			        el = thumbElements[i];
+
+			        // include only element nodes
+			        if(el.nodeType !== 1) {
+			          continue;
+			        }
+
+			        childElements = el.children;
+
+			        size = el.getAttribute('data-size').split('x');
+
+			        // create slide object
+			        item = {
+						src: el.getAttribute('href'),
+						w: parseInt(size[0], 10),
+						h: parseInt(size[1], 10),
+						author: el.getAttribute('data-author')
+			        };
+
+			        item.el = el; // save link to element for getThumbBoundsFn
+
+			        if(childElements.length > 0) {
+			          item.msrc = childElements[0].getAttribute('src'); // thumbnail url
+			          if(childElements.length > 1) {
+			              item.title = childElements[1].innerHTML; // caption (contents of figure)
+			          }
+			        }
+
+
+					var mediumSrc = el.getAttribute('data-med');
+		          	if(mediumSrc) {
+		            	size = el.getAttribute('data-med-size').split('x');
+		            	// "medium-sized" image
+		            	item.m = {
+		              		src: mediumSrc,
+		              		w: parseInt(size[0], 10),
+		              		h: parseInt(size[1], 10)
+		            	};
+		          	}
+		          	// original image
+		          	item.o = {
+		          		src: item.src,
+		          		w: item.w,
+		          		h: item.h
+		          	};
+
+			        items.push(item);
+			    }
+
+			    return items;
+			};
+
+			// find nearest parent element
+			var closest = function closest(el, fn) {
+			    return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+			};
+
+			var onThumbnailsClick = function(e) {
+			    e = e || window.event;
+			    e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+			    var eTarget = e.target || e.srcElement;
+
+			    var clickedListItem = closest(eTarget, function(el) {
+			        return el.tagName === 'A';
+			    });
+
+			    if(!clickedListItem) {
+			        return;
+			    }
+
+			    var clickedGallery = clickedListItem.parentNode;
+
+			    var childNodes = clickedListItem.parentNode.childNodes,
+			        numChildNodes = childNodes.length,
+			        nodeIndex = 0,
+			        index;
+
+			    for (var i = 0; i < numChildNodes; i++) {
+			        if(childNodes[i].nodeType !== 1) {
+			            continue;
+			        }
+
+			        if(childNodes[i] === clickedListItem) {
+			            index = nodeIndex;
+			            break;
+			        }
+			        nodeIndex++;
+			    }
+
+			    if(index >= 0) {
+			        openPhotoSwipe( index, clickedGallery );
+			    }
+			    return false;
+			};
+
+			var photoswipeParseHash = function() {
+				var hash = window.location.hash.substring(1),
+			    params = {};
+
+			    if(hash.length < 5) { // pid=1
+			        return params;
+			    }
+
+			    var vars = hash.split('&');
+			    for (var i = 0; i < vars.length; i++) {
+			        if(!vars[i]) {
+			            continue;
+			        }
+			        var pair = vars[i].split('=');
+			        if(pair.length < 2) {
+			            continue;
+			        }
+			        params[pair[0]] = pair[1];
+			    }
+
+			    if(params.gid) {
+			    	params.gid = parseInt(params.gid, 10);
+			    }
+
+			    return params;
+			};
+
+			var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+			    var pswpElement = document.querySelectorAll('.pswp')[0],
+			        gallery,
+			        options,
+			        items;
+
+				items = parseThumbnailElements(galleryElement);
+
+			    // define options (if needed)
+			    options = {
+
+			        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+			        getThumbBoundsFn: function(index) {
+			            // See Options->getThumbBoundsFn section of docs for more info
+			            var thumbnail = items[index].el.children[0],
+			                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+			                rect = thumbnail.getBoundingClientRect();
+
+			            return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
+			        },
+
+			    };
+
+
+			    if(fromURL) {
+			    	if(options.galleryPIDs) {
+			    		// parse real index when custom PIDs are used
+			    		// https://photoswipe.com/documentation/faq.html#custom-pid-in-url
+			    		for(var j = 0; j < items.length; j++) {
+			    			if(items[j].pid == index) {
+			    				options.index = j;
+			    				break;
+			    			}
+			    		}
+				    } else {
+				    	options.index = parseInt(index, 10) - 1;
+				    }
+			    } else {
+			    	options.index = parseInt(index, 10);
+			    }
+
+			    // exit if index not found
+			    if( isNaN(options.index) ) {
+			    	return;
+			    }
+
+
+
+				var radios = document.getElementsByName('gallery-style');
+				for (var i = 0, length = radios.length; i < length; i++) {
+				    if (radios[i].checked) {
+				        if(radios[i].id == 'radio-all-controls') {
+
+				        } else if(radios[i].id == 'radio-minimal-black') {
+				        	options.mainClass = 'pswp--minimal--dark';
+					        options.barsSize = {top:0,bottom:0};
+							options.captionEl = false;
+							options.fullscreenEl = false;
+							options.shareEl = false;
+							options.bgOpacity = 0.85;
+							options.tapToClose = true;
+							options.tapToToggleControls = false;
+				        }
+				        break;
+				    }
+				}
+
+			    if(disableAnimation) {
+			        options.showAnimationDuration = 0;
+			    }
+
+			    // Pass data to PhotoSwipe and initialize it
+			    gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+
+			    // see: http://photoswipe.com/documentation/responsive-images.html
+				var realViewportWidth,
+				    useLargeImages = false,
+				    firstResize = true,
+				    imageSrcWillChange;
+
+				gallery.listen('beforeResize', function() {
+
+					var dpiRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
+					dpiRatio = Math.min(dpiRatio, 2.5);
+				    realViewportWidth = gallery.viewportSize.x * dpiRatio;
+
+
+				    if(realViewportWidth >= 1200 || (!gallery.likelyTouchDevice && realViewportWidth > 800) || screen.width > 1200 ) {
+				    	if(!useLargeImages) {
+				    		useLargeImages = true;
+				        	imageSrcWillChange = true;
+				    	}
+
+				    } else {
+				    	if(useLargeImages) {
+				    		useLargeImages = false;
+				        	imageSrcWillChange = true;
+				    	}
+				    }
+
+				    if(imageSrcWillChange && !firstResize) {
+				        gallery.invalidateCurrItems();
+				    }
+
+				    if(firstResize) {
+				        firstResize = false;
+				    }
+
+				    imageSrcWillChange = false;
+
+				});
+
+				gallery.listen('gettingData', function(index, item) {
+				    if( useLargeImages ) {
+				        item.src = item.o.src;
+				        item.w = item.o.w;
+				        item.h = item.o.h;
+				    } else {
+				        item.src = item.m.src;
+				        item.w = item.m.w;
+				        item.h = item.m.h;
+				    }
+				});
+
+			    gallery.init();
+			};
+
+			// select all gallery elements
+			var galleryElements = document.querySelectorAll( gallerySelector );
+			for(var i = 0, l = galleryElements.length; i < l; i++) {
+				galleryElements[i].setAttribute('data-pswp-uid', i+1);
+				galleryElements[i].onclick = onThumbnailsClick;
+			}
+
+			// Parse URL and open gallery if it contains #&pid=3&gid=1
+			var hashData = photoswipeParseHash();
+			if(hashData.pid && hashData.gid) {
+				openPhotoSwipe( hashData.pid,  galleryElements[ hashData.gid - 1 ], true, true );
+			}
+		};
+
+		initPhotoSwipeFromDOM('.js-gallery');
+
+	})();
+
+	</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54243948-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
 </html>
