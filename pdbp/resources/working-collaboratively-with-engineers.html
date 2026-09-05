@@ -1,0 +1,414 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Working collaboratively with engineers</title>
+		<meta name="viewport" content="initial-scale=1">
+
+		<!-- meta data -->
+		
+		
+
+		<!-- open graph common -->
+		<meta property="og:site_name" content="PDBP | Product Design Best Practices">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://pdbp.xyz/themes/user/site/default/asset/img/common/og-image_1.png"> 
+
+		
+		<!--link rel="preconnect" href="https://fonts.gstatic.com"-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+		<link href="../styles/styles.css" title="site-styles" rel="stylesheet">
+		<link rel="icon" type="image/png" href="../themes/user/site/default/asset/img/home/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="../themes/user/site/default/asset/img/home/favicon.svg" />
+		<link rel="shortcut icon" href="../themes/user/site/default/asset/img/home/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../themes/user/site/default/asset/img/home/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="PDBP" />
+		<link rel="manifest" href="https://pdbp.xyz/themes/user/site/default/asset/img/home/site.webmanifest" />
+        <style type="text/css">
+            :root {
+                --canon: clamp(3.125rem, 2.2223rem + 4.5135vw, 7.3rem);
+                --paragon: clamp(2rem, -0.0893rem + 9.2857vw, 6.875rem);
+                --pica: clamp(1.6rem, 1rem + 2.6667vw, 3rem);
+                --long-pica: clamp(1.5rem, 1.3714rem + 0.5714vw, 1.8rem);
+                --long-primer: clamp(1.25rem, 1.1429rem + 0.4762vw, 1.5rem);
+                --primer: 1rem;
+                --brevier: 0.95rem;
+                --minion: 0.85rem;
+
+                --color-dusk: hsl(312, 16%, 25%);
+                --color-dusk-10: hsl(312,16%,35%);
+                --color-dusk-20: hsl(312, 16%, 45%);
+                --color-dusk-60: hsl(312, 82%, 85%);
+                --color-dusk-70: hsl(312, 82%, 95%);
+                --color-yellow: hsl(52, 100%, 50%);
+                --color-white: var(--color-dusk-70);
+                --color-turquoise: #00fbff;
+                --color-purple: hsl(289, 62%, 43%);
+                --color-turquoise--light: hsl(200, 18%, 80%);
+                --color-black: hsl(216, 10%, 10%);
+				
+				--c1: var(--color-dusk);
+                --c2: rgb(240,37,117);
+                --c3: var(--color-yellow);
+                --c4: #f35393;
+				
+				--l1: var(--color-dusk-10);
+                --l2: var(--color-dusk);
+                --l3: var(--c2);
+            }
+          </style>
+	</head>
+	<body>
+		<header class="c-site-header">
+			<a href="../index.html" class="is-brand">
+			  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" class="pdbp-logo" alt="Product Design Best Practice"><g clip-path="url(#a)"><path fill="#1E151C" d="M0 16C0 7.163 7.163 0 16 0h22a6 6 0 0 1 6 6v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V16Z"/><circle cx="15.5" cy="15.5" r="15.5" fill="#86115E"/><circle cx="27.5" cy="28.5" r="15.5" fill="#86115C"/><g clip-path="url(#b)"><path fill="#86115E" d="M0 16a6 6 0 0 1 12 0v22a6 6 0 0 1-12 0V16Z"/><path fill="#AE0573" d="M0 15a6 6 0 0 1 12 0v16C5.373 31 0 25.627 0 19v-4Z"/><rect width="12" height="12" y="32" fill="#F62DCF" rx="6"/></g><rect width="12" height="44" x="32" fill="#86115C" rx="6"/><rect width="12" height="12" x="32" fill="#F62DCF" rx="6"/><g clip-path="url(#c)"><circle cx="16" cy="16" r="16" fill="#AE0573"/></g><g clip-path="url(#d)"><circle cx="27.5" cy="28.5" r="15.5" fill="#AE0573"/></g></g><defs><clipPath id="a"><path fill="#fff" d="M0 16C0 7.163 7.163 0 16 0h22a6 6 0 0 1 6 6v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V16Z"/></clipPath><clipPath id="b"><path fill="#fff" d="M0 16a6 6 0 0 1 12 0v22a6 6 0 0 1-12 0V16Z"/></clipPath><clipPath id="c"><rect width="31" height="31" x="12" y="13" fill="#fff" rx="15.5"/></clipPath><clipPath id="d"><rect width="12" height="44" x="32" fill="#fff" rx="6"/></clipPath></defs></svg>
+			  <span class="pdbp-name">Product Design Best Practice</span>
+      		</a>
+		</header>
+        
+			
+
+<style type="text/css">
+    .c-article-image--19
+     {
+  --s: 101px; /* control the size*/
+  
+  --c:,#0000 39%,var(--c1) 40% 93%,#0000 94%;
+  --_s:calc(1.5*var(--s))/calc(4*var(--s)) calc(3*var(--s));
+  background:
+    radial-gradient(calc(1.5*var(--s)) at 37.5%   0%var(--c))
+     calc(-.5*var(--s)) var(--_s),
+    radial-gradient(calc(1.5*var(--s)) at 37.5% 100%var(--c))
+     calc(1.5*var(--s)) var(--_s),
+    radial-gradient(25% calc(50%/3),#0000 96%,var(--c2))
+     0 0/calc(2*var(--s)) calc(3*var(--s)),
+    repeating-conic-gradient(var(--c3) 0 25%,var(--c4) 0 50%)
+     0 0/calc(4*var(--s)) calc(6*var(--s));
+}}
+</style>
+<div class="c-article-image--19 c-article-image has-bottom-border u-margin-zero" style="aspect-ratio: 10/1">   					   
+</div>
+ <main class="c-site-main">
+  <section class="c-article-intro u-margin-bottom--lg">
+      <h1 class="pica u-margin-bottom" style="color: var(--color-dusk-60)">Working collaboratively with engineers</h1>
+      
+          <p>There is no one-size fits all here. The process is likely to differ for every project. However, a good knowledge of working with and developing design systems, combined with pragmatism around effort vs impact is likely to go a long way.</p><p>This page lists some good examples from successful product teams and examples of how you can use your design tools (read: Figma) to streamline design handover.</p>
+      
+
+      
+  </section>
+  <section class="c-tile-grid">
+      
+      <div class="c-tile-grid__item
+        
+            
+        ">
+        
+        
+          <h2 class="is-title">
+              <a href="https://spotify.design/article/collaboration-secrets-design-x-engineering" target="_blank">How Spotify's product team works</a>
+          </h2>
+          <div class="is-image"><img src="../themes/user/site/default/asset/img/common/spotify-product.webp" alt="https://pdbp.xyz/themes/user/site/default/asset/img/common/spotify-product.webp" /></div>
+        
+         
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><p>Learn how designers and engineers collaborate at Spotify: what works well, what can go wrong … and everything in between.</p></div>
+        
+          
+          <div class="has-link">
+              <a href="https://spotify.design/article/collaboration-secrets-design-x-engineering" class="is-link cta-button" target="_blank">Go to site</a>
+          </div>
+          
+          
+          
+        
+      </div>
+      
+      <div class="c-tile-grid__item
+        
+            has-video
+        ">
+        
+        
+         
+        
+          <h2 class="is-title">From monologues to dialogues—unlocking designer-developer collaboration</h2>
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><div><blockquote><div><div class="scriptor-paragraph"><span>Does trying to understand a technical aspect of a project make your head spin? In this talk, you will learn about some communication tools that have helped me jump start work on highly technical projects and build rapport with engineers.</span></div></div></blockquote></div><div><div class="scriptor-paragraph"><br><span>Figma Dev Mode and a good design system isn't a magic bullet for seamless design/developer collaboration. But it will certainly help.</span></div><div class="scriptor-paragraph">&nbsp;</div><figure class="media"><div data-oembed-url="https://youtu.be/Ru6rMHfW9AM"><div style="position: relative; padding-bottom: 100%; height: 0; padding-bottom: 56.2493%;"><iframe src="https://www.youtube.com/embed/Ru6rMHfW9AM" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div></div></figure></div></div>
+        
+          
+          
+          
+        
+      </div>
+      
+      <div class="c-tile-grid__item
+        
+            
+        ">
+        
+        
+          <h2 class="is-title">
+              <a href="https://blog.zeplin.io/designer-developer-collaboration-insights-and-statistics" target="_blank">What goes wrong with designer-developer collaboration? — new insights and solutions</a>
+          </h2>
+          <div class="is-image"><img src="../themes/user/site/default/asset/img/common/design-dev-collab.webp" alt="https://pdbp.xyz/themes/user/site/default/asset/img/common/design-dev-collab.webp" /></div>
+        
+         
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><div><blockquote><div><div class="scriptor-paragraph"><i>Wh</i><span>y is designer-developer collaboration such a pain point for teams? What are the root causes? What can we do about it?</span></div></div></blockquote></div><div><div class="scriptor-paragraph"><br>Y<span>es, it's a bit of a sales pitch for Zeplin. But the core messaging and reasons using a tool like Zeplin might help are sound.</span></div></div></div>
+        
+          
+          <div class="has-link">
+              <a href="https://blog.zeplin.io/designer-developer-collaboration-insights-and-statistics" class="is-link cta-button" target="_blank">Go to site</a>
+          </div>
+          
+          
+          
+        
+      </div>
+      
+      <div class="c-tile-grid__item
+        
+            
+        ">
+        
+        
+          <h2 class="is-title">
+              <a href="https://www.figma.com/blog/the-anatomy-of-a-component-sprint/" target="_blank">The anatomy of a component sprint</a>
+          </h2>
+          <div class="is-image"><img src="../themes/user/site/default/asset/img/common/sprint-anatomy.webp" alt="https://pdbp.xyz/themes/user/site/default/asset/img/common/sprint-anatomy.webp" /></div>
+        
+         
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><div><blockquote><div class="scriptor-paragraph"><span>The Washington Post’s inclusive process for creating new design system components bridges the gap between design and development to make features that help navigate the news online.</span></div></blockquote><div class="scriptor-paragraph">&nbsp;</div></div></div>
+        
+          
+          <div class="has-link">
+              <a href="https://www.figma.com/blog/the-anatomy-of-a-component-sprint/" class="is-link cta-button" target="_blank">Go to site</a>
+          </div>
+          
+          
+          
+        
+      </div>
+      
+      <div class="c-tile-grid__item
+        
+            
+        ">
+        
+        
+          <h2 class="is-title">
+              <a href="https://www.invisionapp.com/inside-design/design-questions-developers/" target="_blank">Questions to ask developers before you start designing</a>
+          </h2>
+          <div class="is-image"><img src="../themes/user/site/default/asset/img/common/qs-to-ask.webp" alt="https://pdbp.xyz/themes/user/site/default/asset/img/common/qs-to-ask.webp" /></div>
+        
+         
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><div><div class="scriptor-paragraph"><span>Written in 2016. This is a bit dated now but I can't find a better and up-to-date equivalent. The details of some of these questions should be updated to reflect modern web standards and technologies, but the underlying sentiment is very much still valid.</span></div></div></div>
+        
+          
+          <div class="has-link">
+              <a href="https://www.invisionapp.com/inside-design/design-questions-developers/" class="is-link cta-button" target="_blank">Go to site</a>
+          </div>
+          
+          
+          
+        
+      </div>
+      
+      <div class="c-tile-grid__item
+        
+            has-video
+        ">
+        
+        
+         
+        
+          <h2 class="is-title">Figma tutorial: Collaboration and handoff in Dev Mode</h2>
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><figure class="media"><div data-oembed-url="https://youtu.be/xCJsRuH7v9w?list=PLXDU_eVOJTx402DljIPagaDKLibF-qfF0"><div style="position: relative; padding-bottom: 100%; height: 0; padding-bottom: 56.2493%;"><iframe src="https://www.youtube.com/embed/xCJsRuH7v9w" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div></div></figure></div>
+        
+          
+          
+          
+        
+      </div>
+      
+      <div class="c-tile-grid__item
+        
+            
+        ">
+        
+        
+         
+          <h2 class="is-title">
+              <a href="../figma-design-dev.pdf" target="_blank">Decode the developer</a>
+          </h2>
+          <div class="is-image"><img src="../themes/user/site/default/asset/img/common/decode-developer.webp" alt="https://pdbp.xyz/themes/user/site/default/asset/img/common/decode-developer.webp" /></div>
+        
+        
+          <h2 class="is-title">Decode the developer</h2>
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><p>A report from Figma looking at how designers and developers can work together to reach project perfection.</p></div>
+        
+          
+          
+          
+          <div class="has-link">
+              <a href="../figma-design-dev.pdf" class="is-link cta-button" target="_blank">Open PDF</a>
+          </div>
+          
+        
+      </div>
+      
+  </section>
+                   
+  
+  <div class="c-related-posts">
+      <h3 class="is-title">Related articles</h3>
+      <ul class="c-related-posts__list">
+
+      
+          <li class="c-related-posts__item">
+              <a href="able-to-give-clear-rationale-and-validation-for-design-decisions.html" class="is-link">
+                <style type="text/css">
+                    .c-article-image--16
+                    {
+  --s: 107px; /* control the size*/
+  
+  background:
+    conic-gradient(from  45deg at 75% 75%,var(--c1) 25%,var(--c2) 0 50%,#0000 0)
+     0 0/var(--s) var(--s),
+    conic-gradient(from 225deg at 25% 25%,var(--c2) 25%,var(--c1) 0 50%,#0000 0)
+     0 0/var(--s) var(--s),
+    repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%)
+     0 0/calc(2*var(--s)) calc(2*var(--s));
+}
+                </style>
+                <div class="c-article-image--16 c-article-image has-bottom-border">
+
+                </div>
+                <div class="is-labels">
+                  <h4 class="is-name long-primer">Able to give clear rationale and validation for design decisions</h4>
+                  <p class="is-summary">Present the argument with a strong business focus. Be aware of your audience and their core motivations.</p>
+                </div>
+             </a>
+          </li>
+       
+          <li class="c-related-posts__item">
+              <a href="communicate-the-vision.html" class="is-link">
+                <style type="text/css">
+                    .c-article-image--21
+                    {
+  --s: 123px; /* control the size*/
+  
+  --_g: radial-gradient(calc(var(--s)/2),var(--c1) 97%,#0000);
+  background:
+    var(--_g),var(--_g) calc(2*var(--s)) calc(2*var(--s)),
+    repeating-conic-gradient(from 45deg,#0000 0 25%,var(--c2) 0 50%) calc(-.707*var(--s)) calc(-.707*var(--s)),
+    repeating-linear-gradient(135deg,var(--c1) calc(var(--s)/-2) calc(var(--s)/2),var(--c2) 0 calc(2.328*var(--s)));
+  background-size: calc(4*var(--s)) calc(4*var(--s));
+}
+                </style>
+                <div class="c-article-image--21 c-article-image has-bottom-border">
+
+                </div>
+                <div class="is-labels">
+                  <h4 class="is-name long-primer">Communicate the vision</h4>
+                  <p class="is-summary">Collaboration and inclusion are important parts of a successful project. Within a team it ensures everyone is aligned and working to the same goals.</p>
+                </div>
+             </a>
+          </li>
+       
+          <li class="c-related-posts__item">
+              <a href="prioritisation.html" class="is-link">
+                <style type="text/css">
+                    .c-article-image--20
+                    {
+  --s: 100px; /* control the size*/
+  
+  --_g: 
+     var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+     var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
+  background:
+    radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
+    radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
+    var(--c1);
+  background-size: var(--s) var(--s);
+}
+                </style>
+                <div class="c-article-image--20 c-article-image has-bottom-border">
+
+                </div>
+                <div class="is-labels">
+                  <h4 class="is-name long-primer">Prioritisation</h4>
+                  <p class="is-summary">How do you prioritise? Should you focus on the features most requested by users, the ones that will have the biggest impact on the business or the features that can be delivered most quickly?</p>
+                </div>
+             </a>
+          </li>
+       
+      </ul>
+  </div>
+  
+  
+</main>
+
+		
+
+		<footer class="c-site-footer">
+			<div class="is-footer-text">This site uses just one cookie — for security. No tracking. No ads. No nonsense.</div>
+			<a href="https://www.linkedin.com/in/cowenjohn/" class="is-me">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQE2N445xPalNw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1690788446297?e=1755129600&amp;v=beta&amp;t=bS0r-PudkWZI66rbiqIxFozWVF6H_htWH1QmlfQnvFo" class="is-avatar" alt="John Cowen">
+        <span class="is-label">Find me on LinkedIn</span>
+      </a>
+		</footer></section>
+	</body>
+</html>

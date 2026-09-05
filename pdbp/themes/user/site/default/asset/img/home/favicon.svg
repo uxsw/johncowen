@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="44" height="44"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_122)">
+<path d="M0 16C0 7.16344 7.16344 0 16 0H38C41.3137 0 44 2.68629 44 6V38C44 41.3137 41.3137 44 38 44H6C2.68629 44 0 41.3137 0 38V16Z" fill="#1E151C"></path>
+<circle cx="15.5" cy="15.5" r="15.5" fill="#86115E"></circle>
+<circle cx="27.5" cy="28.5" r="15.5" fill="#86115C"></circle>
+<g clip-path="url(#clip1_1_122)">
+<path d="M0 16C0 12.6863 2.68629 10 6 10C9.31371 10 12 12.6863 12 16V38C12 41.3137 9.31371 44 6 44C2.68629 44 0 41.3137 0 38V16Z" fill="#86115E"></path>
+<path d="M0 15C0 11.6863 2.68629 9 6 9C9.31371 9 12 11.6863 12 15V31C5.37258 31 0 25.6274 0 19V15Z" fill="#AE0573"></path>
+<rect y="32" width="12" height="12" rx="6" fill="#F62DCF"></rect>
+</g>
+<rect x="32" width="12" height="44" rx="6" fill="#86115C"></rect>
+<rect x="32" width="12" height="12" rx="6" fill="#F62DCF"></rect>
+<g clip-path="url(#clip2_1_122)">
+<circle cx="16" cy="16" r="16" fill="#AE0573"></circle>
+</g>
+<g clip-path="url(#clip3_1_122)">
+<circle cx="27.5" cy="28.5" r="15.5" fill="#AE0573"></circle>
+</g>
+</g>
+<defs>
+<clipPath id="SvgjsClipPath1011">
+<path d="M0 16C0 7.16344 7.16344 0 16 0H38C41.3137 0 44 2.68629 44 6V38C44 41.3137 41.3137 44 38 44H6C2.68629 44 0 41.3137 0 38V16Z" fill="white"></path>
+</clipPath>
+<clipPath id="SvgjsClipPath1010">
+<path d="M0 16C0 12.6863 2.68629 10 6 10C9.31371 10 12 12.6863 12 16V38C12 41.3137 9.31371 44 6 44C2.68629 44 0 41.3137 0 38V16Z" fill="white"></path>
+</clipPath>
+<clipPath id="SvgjsClipPath1009">
+<rect x="12" y="13" width="31" height="31" rx="15.5" fill="white"></rect>
+</clipPath>
+<clipPath id="SvgjsClipPath1008">
+<rect x="32" width="12" height="44" rx="6" fill="white"></rect>
+</clipPath>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

@@ -1,0 +1,363 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Principles of design</title>
+		<meta name="viewport" content="initial-scale=1">
+
+		<!-- meta data -->
+		
+		
+
+		<!-- open graph common -->
+		<meta property="og:site_name" content="PDBP | Product Design Best Practices">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://pdbp.xyz/themes/user/site/default/asset/img/common/og-image_1.png"> 
+
+		
+		<!--link rel="preconnect" href="https://fonts.gstatic.com"-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+		<link href="../styles/styles.css" title="site-styles" rel="stylesheet">
+		<link rel="icon" type="image/png" href="../themes/user/site/default/asset/img/home/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="../themes/user/site/default/asset/img/home/favicon.svg" />
+		<link rel="shortcut icon" href="../themes/user/site/default/asset/img/home/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../themes/user/site/default/asset/img/home/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="PDBP" />
+		<link rel="manifest" href="https://pdbp.xyz/themes/user/site/default/asset/img/home/site.webmanifest" />
+        <style type="text/css">
+            :root {
+                --canon: clamp(3.125rem, 2.2223rem + 4.5135vw, 7.3rem);
+                --paragon: clamp(2rem, -0.0893rem + 9.2857vw, 6.875rem);
+                --pica: clamp(1.6rem, 1rem + 2.6667vw, 3rem);
+                --long-pica: clamp(1.5rem, 1.3714rem + 0.5714vw, 1.8rem);
+                --long-primer: clamp(1.25rem, 1.1429rem + 0.4762vw, 1.5rem);
+                --primer: 1rem;
+                --brevier: 0.95rem;
+                --minion: 0.85rem;
+
+                --color-dusk: hsl(312, 16%, 25%);
+                --color-dusk-10: hsl(312,16%,35%);
+                --color-dusk-20: hsl(312, 16%, 45%);
+                --color-dusk-60: hsl(312, 82%, 85%);
+                --color-dusk-70: hsl(312, 82%, 95%);
+                --color-yellow: hsl(52, 100%, 50%);
+                --color-white: var(--color-dusk-70);
+                --color-turquoise: #00fbff;
+                --color-purple: hsl(289, 62%, 43%);
+                --color-turquoise--light: hsl(200, 18%, 80%);
+                --color-black: hsl(216, 10%, 10%);
+				
+				--c1: var(--color-dusk);
+                --c2: rgb(240,37,117);
+                --c3: var(--color-yellow);
+                --c4: #f35393;
+				
+				--l1: var(--color-dusk-10);
+                --l2: var(--color-dusk);
+                --l3: var(--c2);
+            }
+          </style>
+	</head>
+	<body>
+		<header class="c-site-header">
+			<a href="../index.html" class="is-brand">
+			  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" class="pdbp-logo" alt="Product Design Best Practice"><g clip-path="url(#a)"><path fill="#1E151C" d="M0 16C0 7.163 7.163 0 16 0h22a6 6 0 0 1 6 6v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V16Z"/><circle cx="15.5" cy="15.5" r="15.5" fill="#86115E"/><circle cx="27.5" cy="28.5" r="15.5" fill="#86115C"/><g clip-path="url(#b)"><path fill="#86115E" d="M0 16a6 6 0 0 1 12 0v22a6 6 0 0 1-12 0V16Z"/><path fill="#AE0573" d="M0 15a6 6 0 0 1 12 0v16C5.373 31 0 25.627 0 19v-4Z"/><rect width="12" height="12" y="32" fill="#F62DCF" rx="6"/></g><rect width="12" height="44" x="32" fill="#86115C" rx="6"/><rect width="12" height="12" x="32" fill="#F62DCF" rx="6"/><g clip-path="url(#c)"><circle cx="16" cy="16" r="16" fill="#AE0573"/></g><g clip-path="url(#d)"><circle cx="27.5" cy="28.5" r="15.5" fill="#AE0573"/></g></g><defs><clipPath id="a"><path fill="#fff" d="M0 16C0 7.163 7.163 0 16 0h22a6 6 0 0 1 6 6v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V16Z"/></clipPath><clipPath id="b"><path fill="#fff" d="M0 16a6 6 0 0 1 12 0v22a6 6 0 0 1-12 0V16Z"/></clipPath><clipPath id="c"><rect width="31" height="31" x="12" y="13" fill="#fff" rx="15.5"/></clipPath><clipPath id="d"><rect width="12" height="44" x="32" fill="#fff" rx="6"/></clipPath></defs></svg>
+			  <span class="pdbp-name">Product Design Best Practice</span>
+      		</a>
+		</header>
+        
+			
+
+<style type="text/css">
+    .c-article-image--13
+    {
+  --s: 64px; /* control the size*/
+  
+  --_g: 90deg,#0000 0; 
+  background:
+    conic-gradient(from 135deg,var(--c1) var(--_g)) var(--s) calc(var(--s)/2),
+    conic-gradient(from 135deg,var(--c2) var(--_g)),
+    conic-gradient(from 135deg at 50% 0,var(--c1) var(--_g)) var(--c2); 
+  background-size: calc(2*var(--s)) var(--s);
+}
+</style>
+<div class="c-article-image--13 c-article-image has-bottom-border u-margin-zero" style="aspect-ratio: 10/1">   					   
+</div>
+ <main class="c-site-main">
+  <section class="c-article-intro u-margin-bottom--lg">
+      <h1 class="pica u-margin-bottom" style="color: var(--color-dusk-60)">Principles of design</h1>
+      
+          <p>Steve Jobs famously said: <i>“The design is not just what it looks like and feels like. The design is how it works.”</i>This is true. However a beautifully designed interface can increase user engagement by offering them a more delightful experience. A good understanding of the principles of design will help you deliver highly functional and accessible solutions that also have a strong design aesthetic.</p>
+      
+
+      
+  </section>
+  <section class="c-tile-grid">
+      
+      <div class="c-tile-grid__item
+        
+            
+        ">
+        
+        
+          <h2 class="is-title">
+              <a href="https://www.invisionapp.com/defined/principles-of-design" target="_blank">The seven principles of design</a>
+          </h2>
+          <div class="is-image"><img src="../themes/user/site/default/asset/img/common/7principles.webp" alt="https://pdbp.xyz/themes/user/site/default/asset/img/common/7principles.webp" /></div>
+        
+         
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><p>Classic and digital designers alike harness the principles of design to shape their work, building on top of the Elements of design to give cohesion to their pieces. When used successfully, these principles have the ability to transform designs, both aesthetically and in terms of performance.</p></div>
+        
+          
+          <div class="has-link">
+              <a href="https://www.invisionapp.com/defined/principles-of-design" class="is-link cta-button" target="_blank">Go to site</a>
+          </div>
+          
+          
+          
+        
+      </div>
+      
+      <div class="c-tile-grid__item
+        
+            
+        ">
+        
+        
+          <h2 class="is-title">
+              <a href="https://lawsofux.com" target="_blank">Laws of UX</a>
+          </h2>
+          <div class="is-image"><img src="../themes/user/site/default/asset/img/common/visualdesignprinciples.webp" alt="https://pdbp.xyz/themes/user/site/default/asset/img/common/visualdesignprinciples.webp" /></div>
+        
+         
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><p>The Laws of UX is a collection of best practices that designers can consider when building user interfaces.</p></div>
+        
+          
+          <div class="has-link">
+              <a href="https://lawsofux.com" class="is-link cta-button" target="_blank">Go to site</a>
+          </div>
+          
+          
+          
+        
+      </div>
+      
+      <div class="c-tile-grid__item
+        
+            has-video
+        ">
+        
+        
+         
+        
+          <h2 class="is-title">Understanding visual design principles. From Google's UX design course</h2>
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><p>Explore how to refine and improve your mockup using visual design principles.</p><figure class="media"><div data-oembed-url="https://www.youtube.com/embed/yNDgFK2Jj1E"><div style="position: relative; padding-bottom: 100%; height: 0; padding-bottom: 56.2493%;"><iframe src="https://www.youtube.com/embed/yNDgFK2Jj1E" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div></div></figure></div>
+        
+          
+          
+          
+        
+      </div>
+      
+      <div class="c-tile-grid__item
+        
+            
+        ">
+        
+        
+          <h2 class="is-title">
+              <a href="https://www.nngroup.com/articles/principles-visual-design" target="_blank">Principles of visual design in UX from Nielsen Norman Group.</a>
+          </h2>
+          <div class="is-image"><img src="../themes/user/site/default/asset/img/common/ux-laws.webp" alt="https://pdbp.xyz/themes/user/site/default/asset/img/common/ux-laws.webp" /></div>
+        
+         
+        
+        
+        
+	
+        
+       
+
+        <div class="is-description"><p>5 principles of visual design in UX | Nielsen Norman Group</p></div>
+        
+          
+          <div class="has-link">
+              <a href="https://www.nngroup.com/articles/principles-visual-design" class="is-link cta-button" target="_blank">Go to site</a>
+          </div>
+          
+          
+          
+        
+      </div>
+      
+  </section>
+                   
+  
+  <div class="c-related-posts">
+      <h3 class="is-title">Related articles</h3>
+      <ul class="c-related-posts__list">
+
+      
+          <li class="c-related-posts__item">
+              <a href="design-product-principles.html" class="is-link">
+                <style type="text/css">
+                    .c-article-image--14
+                    {
+  --s: 80px; /* control the size*/
+  
+  background:
+    radial-gradient(var(--c2) 15%,
+      #0000 17% 20%,var(--c2) 22% 25%,
+      #0000 27% 30%,var(--c2) 32% 35%,
+      #0000 37% 40%,var(--c2) 42% 45%,
+      #0000 47% 50%,var(--c2) 52% 55%, var(--c1) 57%)
+     calc(var(--s)/2) 0/var(--s) var(--s),
+    repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%)
+     0 0/calc(2*var(--s)) calc(2*var(--s));
+}
+                </style>
+                <div class="c-article-image--14 c-article-image has-bottom-border">
+
+                </div>
+                <div class="is-labels">
+                  <h4 class="is-name long-primer">Design &amp; product principles</h4>
+                  <p class="is-summary">Guidelines that empower a team to make wise decisions and appropriate trade-offs when designing, building and innovating</p>
+                </div>
+             </a>
+          </li>
+       
+          <li class="c-related-posts__item">
+              <a href="be-able-to-demonstrate-the-business-value-in-the-solutions.html" class="is-link">
+                <style type="text/css">
+                    .c-article-image--17
+                     {
+  --s: 113px; /* control the size*/
+  
+  background:
+    conic-gradient(at 25% 75%,#0000 25%,var(--c1) 0)
+     calc(var(--s)/-8) calc(var(--s)/8)/var(--s) var(--s),
+    radial-gradient(50% 50%,var(--c1) 24%,var(--c2) 26% 74%,#0000 76%) 
+     0 0/var(--s) var(--s),
+    conic-gradient(var(--c1) 75%,var(--c2) 0) 
+     calc(var(--s)/2) calc(var(--s)/2)/
+     calc(2*var(--s)) calc(2*var(--s));
+}
+                </style>
+                <div class="c-article-image--17 c-article-image has-bottom-border">
+
+                </div>
+                <div class="is-labels">
+                  <h4 class="is-name long-primer">Be able to demonstrate the business value in the solutions</h4>
+                  <p class="is-summary">This page focuses on creating designs that align with business strategy. </p>
+                </div>
+             </a>
+          </li>
+       
+          <li class="c-related-posts__item">
+              <a href="sustainability.html" class="is-link">
+                <style type="text/css">
+                    .c-article-image--22
+                    {
+  --s: 115px; /* control the size*/
+  
+  --_g:,var(--c1) 25%,var(--c2) 0 150deg,var(--c1) 0 240deg,#0000 0;
+  background:
+    conic-gradient(from  60deg at calc(3.866*var(--s)),var(--c2) 60deg,#0000 0)
+     calc(1.366*var(--s)) calc(1.366*var(--s)),
+    conic-gradient(from 240deg at calc( .866*var(--s)),var(--c2) 60deg,#0000 0)
+     calc(2.366*var(--s)) calc(1.366*var(--s)),
+    conic-gradient(at var(--s) var(--s),#0000 75%,var(--c1) 0)
+     calc(1.366*var(--s)) calc(var(--s)/-2),
+    conic-gradient(from 30deg at calc(-.288*var(--s)) 50%, #0000 120deg,var(--c3) 0),
+    conic-gradient(from 90deg at calc(3.732*var(--s)) calc(1.866*var(--s)),
+     var(--c3) 120deg,#0000 0),
+    conic-gradient(from -30deg at calc(3.732*var(--s)) calc(.866*var(--s)),
+     var(--c3) 120deg,var(--c1) 0 210deg,#0000 0),
+    conic-gradient(from 150deg at calc( .866*var(--s))var(--_g)),
+    conic-gradient(from -30deg at calc(2.866*var(--s))var(--_g)) var(--c3);
+  background-size: calc(4.732*var(--s)) calc(2.732*var(--s));
+}
+                </style>
+                <div class="c-article-image--22 c-article-image has-bottom-border">
+
+                </div>
+                <div class="is-labels">
+                  <h4 class="is-name long-primer">Sustainability</h4>
+                  <p class="is-summary">Sustainable design creates long-term solutions and helps societies ensure the well-being of their people and harmony with the environment for generations.</p>
+                </div>
+             </a>
+          </li>
+       
+          <li class="c-related-posts__item">
+              <a href="working-collaboratively-with-engineers.html" class="is-link">
+                <style type="text/css">
+                    .c-article-image--19
+                     {
+  --s: 101px; /* control the size*/
+  
+  --c:,#0000 39%,var(--c1) 40% 93%,#0000 94%;
+  --_s:calc(1.5*var(--s))/calc(4*var(--s)) calc(3*var(--s));
+  background:
+    radial-gradient(calc(1.5*var(--s)) at 37.5%   0%var(--c))
+     calc(-.5*var(--s)) var(--_s),
+    radial-gradient(calc(1.5*var(--s)) at 37.5% 100%var(--c))
+     calc(1.5*var(--s)) var(--_s),
+    radial-gradient(25% calc(50%/3),#0000 96%,var(--c2))
+     0 0/calc(2*var(--s)) calc(3*var(--s)),
+    repeating-conic-gradient(var(--c3) 0 25%,var(--c4) 0 50%)
+     0 0/calc(4*var(--s)) calc(6*var(--s));
+}}
+                </style>
+                <div class="c-article-image--19 c-article-image has-bottom-border">
+
+                </div>
+                <div class="is-labels">
+                  <h4 class="is-name long-primer">Working collaboratively with engineers</h4>
+                  <p class="is-summary">There is no one-size fits all here. The process is likely to differ for every project. However, a good knowledge of working with and developing design systems, combined with pragmatism around effort vs impact is likely to go a long way.</p>
+                </div>
+             </a>
+          </li>
+       
+      </ul>
+  </div>
+  
+  
+</main>
+
+		
+
+		<footer class="c-site-footer">
+			<div class="is-footer-text">This site uses just one cookie — for security. No tracking. No ads. No nonsense.</div>
+			<a href="https://www.linkedin.com/in/cowenjohn/" class="is-me">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQE2N445xPalNw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1690788446297?e=1755129600&amp;v=beta&amp;t=bS0r-PudkWZI66rbiqIxFozWVF6H_htWH1QmlfQnvFo" class="is-avatar" alt="John Cowen">
+        <span class="is-label">Find me on LinkedIn</span>
+      </a>
+		</footer></section>
+	</body>
+</html>
