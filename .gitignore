@@ -1,0 +1,6 @@
+.DS_Store
+
+# Case-study source material stays local; only the pages and web-sized images in casestudies/img/ are published.
+casestudies/*.pdf
+casestudies/*.png
+casestudies/*.jpg

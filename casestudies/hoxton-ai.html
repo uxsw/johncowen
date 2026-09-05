@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoxton AI — John Cowen, case study</title>
+  <meta name="description" content="Design lead at Hoxton AI, 2021–2023: the brand, the product, the research, and the front-end code for a self-install computer vision people-counting platform.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101211" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Hoxton AI — case study by John Cowen">
+  <meta property="og:description" content="Brand, product design and front-end for a self-install computer vision startup.">
+  <meta property="og:image" content="img/hoxton/gradient-logo.png">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/case-study.css">
+</head>
+<body>
+
+<a class="skip" href="#product">Skip to content</a>
+
+<header class="site-head">
+  <div class="container grid">
+    <a class="wordmark" href="../" aria-label="John Cowen, home">
+      <span class="wordmark__name">John Cowen</span>
+      <span class="wordmark__role">Lead product designer</span>
+    </a>
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="../#work">Selected work</a>
+      <span class="crumb__sep" aria-hidden="true">/</span>
+      <span aria-current="page">1.1 Hoxton AI</span>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__knob"></span></span>
+      <span class="theme-toggle__label" data-light="Light" data-dark="Dark">Light</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="case-hero" aria-labelledby="case-title">
+    <div class="container grid">
+      <p class="case-hero__eyebrow label">
+        <span class="accent">Case study 1.1</span>
+        <span>Hoxton AI</span>
+        <span>2021–2023</span>
+      </p>
+
+      <h1 id="case-title" class="case-hero__title canon">
+        A more measurable world,<br>
+        <em>designed end to end.</em>
+      </h1>
+
+      <p class="case-hero__lede long-primer">
+        Hoxton AI built a self-install computer vision system that counts people: traffic past the
+        door, people through it, occupancy inside, and, with sales data, the funnel in between.
+        For two years I was the design lead across the brand, the product, the research, the
+        marketing, and a good share of the front-end code.
+      </p>
+
+      <dl class="case-hero__meta">
+        <div>
+          <dt>Role</dt>
+          <dd>Design lead: product design, branding, UI, UX, research, art direction, front-end implementation</dd>
+        </div>
+        <div>
+          <dt>Company</dt>
+          <dd>Hoxton AI, a UK SaaS startup selling to retailers, museums, galleries and leisure venues</dd>
+        </div>
+        <div>
+          <dt>Shape of it</dt>
+          <dd>Early-stage product, first designer in the room, brand defined from scratch</dd>
+        </div>
+      </dl>
+
+      <figure class="fig fig--logo">
+        <div class="fig__frame">
+          <img src="img/hoxton/gradient-logo.png" width="1200" height="1200" alt="The HoxtonAi logo: a diamond mark in a turquoise-to-violet gradient above the wordmark HOXTON, with Ai in italics." fetchpriority="high">
+        </div>
+        <figcaption class="fig__caption">
+          <span class="fig-label">Fig. 01</span>
+          <span>The HoxtonAi mark. The brand runs almost entirely on solid colour; the turquoise-to-orchid gradient is the one exception, reserved for hero moments.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 01 PRODUCT ============ -->
+  <section class="section section--rule" id="product" aria-labelledby="product-title">
+    <div class="container grid">
+      <header class="section__head">
+        <span class="section__num">01</span>
+        <h2 id="product-title" class="paragon">The product</h2>
+        <p class="section__intro">
+          Cheap smart cameras, installed by the customer, feeding a computer vision platform.
+          The output is data that a store or venue manager can act on the same day.
+        </p>
+      </header>
+
+      <div class="block">
+        <span class="block__n">1.1</span>
+        <div class="block__text">
+          <h3 class="long-primer">What Hoxton did, and why it was different.</h3>
+          <p>Traditional people counting meant surveyors, engineers, site visits and a project plan running into weeks. Hoxton's cameras arrived in the post, were fixed up by the customer in half an hour, and started reporting the next day.</p>
+          <p>The positioning I set out in the brand guidelines put that plainly: the only computer vision system that can be self-installed, for forward-thinking businesses in physical spaces who want to make data-driven decisions. Low cost, easy installation and a retail focus, and only Hoxton offered all three.</p>
+        </div>
+        <figure class="fig fig--right">
+          <div class="fig__frame">
+            <img src="img/hoxton/hoxton-d2.png" width="1407" height="1518" alt="The HoxtonAi customer control room: a left column of sites, cameras and monitors; a trial status panel with data highlights; camera health cards for today, yesterday and the last seven days; store peel-off bars; and a national footfall trends chart." loading="lazy">
+          </div>
+          <figcaption class="fig__caption">
+            <span class="fig-label">Fig. 02</span>
+            <span>The customer control room. Sites, cameras and monitors on the left, trial status and camera health in the middle, and the first metrics as soon as data starts flowing.</span>
+          </figcaption>
+        </figure>
+        <div class="block__figs">
+          <figure class="fig fig--full">
+            <div class="fig__frame">
+              <img src="img/hoxton/hoxton-8.jpg" width="1800" height="1153" alt="Two graphics: a lengthy Gantt chart for a typical people-count installation against a two-row HoxtonAi trial timeline of receive camera, self install, view reports; and a three-circle Venn diagram of low cost, easy installation and retail focused pointing to the HoxtonAi logo." loading="lazy">
+            </div>
+            <figcaption class="fig__caption">
+              <span class="fig-label">Fig. 03</span>
+              <span>Selling the difference. A conventional installation plan set against a HoxtonAi trial, and the three claims only Hoxton could make at once. Both graphics were mine, for sales decks and the website.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 BRAND ============ -->
+  <section class="section section--rule" id="brand" aria-labelledby="brand-title">
+    <div class="container grid">
+      <header class="section__head">
+        <span class="section__num">02</span>
+        <h2 id="brand-title" class="paragon">A brand from scratch</h2>
+        <p class="section__intro">
+          Startups rarely arrive with a brand. I wrote and designed Hoxton's, from mission and voice
+          through to logo, colour, type, illustration and photography, and set it down in the
+          2023 brand guidelines.
+        </p>
+      </header>
+
+      <blockquote class="pull">
+        <p>To make a more measurable world.</p>
+        <footer>Hoxton AI mission statement, brand guidelines 2023</footer>
+      </blockquote>
+
+      <div class="block">
+        <span class="block__n">2.1</span>
+        <div class="block__text">
+          <h3 class="long-primer">Voice before visuals.</h3>
+          <p>Hoxton was a technical company selling to non-technical people. The guidelines cast it as a Sage brand: authoritative and expert, an educator, an encourager of other people's ideas. Colourful and bold in tone, confident and approachable, never shy about explaining what the technology does, always looking for the plain way to say it.</p>
+          <p>Six principles governed every piece of copy, from a button label to a whitepaper.</p>
+        </div>
+        <dl class="voice">
+          <div><dt>Be positive.</dt><dd>Talk about solutions, not problems. Become a product people want to use, not one they feel obliged to use.</dd></div>
+          <div><dt>Be understood.</dt><dd>Leave users feeling empowered to use the product to its full potential.</dd></div>
+          <div><dt>Be concise.</dt><dd>Attention spans are short. Make sure the message gets read.</dd></div>
+          <div><dt>Be consistent.</dt><dd>Show a clear understanding of who we are and what we do.</dd></div>
+          <div><dt>Be unique.</dt><dd>Avoid anything generic that could be said about any other people-counting solution.</dd></div>
+          <div><dt>Be witty.</dt><dd>Snappy, compelling copy that avoids corporate jargon. Express personality.</dd></div>
+        </dl>
+      </div>
+
+      <div class="block">
+        <span class="block__n">2.2</span>
+        <div class="block__text">
+          <h3 class="long-primer">Colour, held to rules.</h3>
+          <p>Yellow is the most Hoxton colour and leads on strong brand pieces. Black, neutral, turquoise, midnight and azure carry the product. A secondary set is for supporting roles only, and every colour has four tints reserved for illustration and charts, never for backgrounds or text. Those tints fed a separate set of data visualisation guidelines for the dashboards.</p>
+          <p>The swatches here are drawn live from the brand's own values.</p>
+        </div>
+        <div class="block__figs">
+          <div class="palette" role="list" aria-label="Primary colours">
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#17191C"></span><span class="swatch__name">Black</span><span class="swatch__hex">#17191C</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#FFE32A"></span><span class="swatch__name">Yellow</span><span class="swatch__hex">#FFE32A</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#F3EEE7"></span><span class="swatch__name">Neutral</span><span class="swatch__hex">#F3EEE7</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#02BBD2"></span><span class="swatch__name">Turquoise</span><span class="swatch__hex">#02BBD2</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#FFFFFF"></span><span class="swatch__name">White</span><span class="swatch__hex">#FFFFFF</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#0C3E56"></span><span class="swatch__name">Midnight</span><span class="swatch__hex">#0C3E56</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#0B75FF"></span><span class="swatch__name">Azure</span><span class="swatch__hex">#0B75FF</span></div>
+          </div>
+          <div class="palette palette--secondary" role="list" aria-label="Secondary colours">
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#EC4253"></span><span class="swatch__name">Red</span><span class="swatch__hex">#EC4253</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#18C17D"></span><span class="swatch__name">Green</span><span class="swatch__hex">#18C17D</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#FF854D"></span><span class="swatch__name">Orange</span><span class="swatch__hex">#FF854D</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#FDC00B"></span><span class="swatch__name">Mikado</span><span class="swatch__hex">#FDC00B</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#3F50B4"></span><span class="swatch__name">Violet</span><span class="swatch__hex">#3F50B4</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#2D9497"></span><span class="swatch__name">Zomp</span><span class="swatch__hex">#2D9497</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#CDD939"></span><span class="swatch__name">Pear</span><span class="swatch__hex">#CDD939</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#E4156F"></span><span class="swatch__name">Rose</span><span class="swatch__hex">#E4156F</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#49C24E"></span><span class="swatch__name">Apple</span><span class="swatch__hex">#49C24E</span></div>
+            <div class="swatch" role="listitem"><span class="swatch__chip" style="background:#9B26AF"></span><span class="swatch__name">Orchid</span><span class="swatch__hex">#9B26AF</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <span class="block__n">2.3</span>
+        <div class="block__text">
+          <h3 class="long-primer">Logo, type and illustration.</h3>
+          <p>A square logo by default, a horizontal one where vertical space is tight, and a hard-working boxed version for the rare occasions the mark has to fight a busy background. Shown only on brand colours, white by default.</p>
+          <p>IBM Plex Sans for everything written. Sentence case throughout, including headings, which end in a full stop. Eyebrows and labels capped at 14px with tracking opened a touch. Text left-aligned, never centred. And when the company name appears in a sentence, the <em>Ai</em> is italicised. Small, deliberate, and the kind of detail a data company should be seen to care about.</p>
+          <p>Illustration is isometric, built from a small set of reusable assets in the brand palette that could be recombined with different people and data overlays. Stock photography, when unavoidable, gets cropped hard and overlaid with yellow.</p>
+        </div>
+        <div class="block__figs">
+          <figure class="fig fig--half-l">
+            <div class="fig__frame fig__frame--brand">
+              <img src="img/hoxton/brand-logos.jpg" width="1800" height="1013" alt="Brand guideline page on logos: the square HoxtonAi logo shown on white, yellow, azure and neutral backgrounds, with a right and wrong example of placing the logo over a photograph." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 04</span><span>Logo rules from the guidelines, including the one that matters most: give it a clear ground.</span></figcaption>
+          </figure>
+          <figure class="fig fig--half-r">
+            <div class="fig__frame fig__frame--brand">
+              <img src="img/hoxton/brand-illustration.jpg" width="1800" height="1013" alt="Brand guideline page on illustration: isometric shopfronts, a museum with an occupancy chart, and a building with a 62 percent capacity dial." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 05</span><span>The illustration system. A handful of isometric assets, endlessly recombined.</span></figcaption>
+          </figure>
+          <figure class="fig fig--full">
+            <div class="fig__frame">
+              <img src="img/hoxton/hoxton-7.jpg" width="1800" height="1155" alt="Print and social pieces: a dark poster with an isometric tower block and the quote We wouldn't have been able to do it without HoxtonAi; a staffing-optimisation chart; and an advert reading Counting visitors out is just as important as counting people in." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 06</span><span>The brand in use: poster, social graphic and a print advert for the leisure sector.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 PRODUCT DESIGN ============ -->
+  <section class="section section--rule" id="design" aria-labelledby="design-title">
+    <div class="container grid">
+      <header class="section__head">
+        <span class="section__num">03</span>
+        <h2 id="design-title" class="paragon">Designing the product</h2>
+        <p class="section__intro">
+          Three problems, worked from research through to shipped interface: getting customers to live
+          data faster, reporting they could act on, and winning over the people the data was about.
+        </p>
+      </header>
+
+      <div class="block">
+        <span class="block__n">3.1</span>
+        <div class="block__text">
+          <h3 class="long-primer">From box to live data, faster.</h3>
+          <p>Every customer had to physically set up cameras in the sites being monitored, and we knew from support conversations where that hurt. I kept iterating the setup journey, the dashboard states and the documentation together, so that the time from a camera arriving to data going live kept shrinking.</p>
+          <p>The trial welcome page became the anchor: one screen that says what happens next, and shows every participating site moving through camera setup, audit and reporting setup, with the blockers called out.</p>
+        </div>
+        <div class="block__figs">
+          <figure class="fig fig--half-l">
+            <div class="fig__frame">
+              <img src="img/hoxton/customer-onboard.png" width="1386" height="938" alt="Trial welcome screen: a yellow panel titled Welcome to your HoxtonAi trial with next steps, beside six site cards showing camera setup and reporting setup status." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 07</span><span>The trial welcome page. Six sites, each showing exactly where it is in setup and what is holding it up.</span></figcaption>
+          </figure>
+          <figure class="fig fig--half-r">
+            <div class="fig__frame">
+              <img src="img/hoxton/org-setup.png" width="1376" height="1061" alt="Add new organisation flow, sites setup step: a list of sites each with reporting monitors, camera counts, opening hours status and a site contact." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 08</span><span>Sites setup for a new organisation. Reporting, cameras and contacts per site, with gaps made visible before launch.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="block">
+        <span class="block__n">3.2</span>
+        <div class="block__text">
+          <h3 class="long-primer">Reporting people can act on.</h3>
+          <p>Customers could get at every metric in the control room, live and historical. Through frequent user feedback sessions I shaped dashboards around the specific questions each group actually asked: how full is the gallery right now, which store is peeling off passing traffic, where is the data I should not trust.</p>
+          <p>That last one mattered. Camera issues were surfaced inline, with accuracy warnings and gaps marked on the charts, rather than hidden behind clean-looking numbers.</p>
+        </div>
+        <div class="block__figs">
+          <figure class="fig fig--left">
+            <div class="fig__frame">
+              <img src="img/hoxton/hoxton-d1.png" width="1600" height="1720" alt="Reporting views: an executive summary with conversion rate, average basket size and sales amount against targets; a multi-store version of the same; and a capacity management panel with an occupancy chart for a gallery." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 09</span><span>Executive summary for one store and for many, and capacity management for a venue. Same components, different questions.</span></figcaption>
+          </figure>
+          <div class="phones">
+            <figure class="fig">
+              <div class="fig__frame">
+                <img src="img/hoxton/hoxton-m2.png" width="647" height="1296" alt="Mobile overview: St Ives with a data accuracy warning of 64 percent due to critical camera issues, and Woodbury Village with event entrances up 6 percent, each with a week chart." loading="lazy">
+              </div>
+              <figcaption class="fig__caption"><span class="fig-label">Fig. 10</span><span>Mobile overview, with a camera problem flagged where it affects the numbers.</span></figcaption>
+            </figure>
+            <figure class="fig">
+              <div class="fig__frame">
+                <img src="img/hoxton/hoxton-m4.png" width="647" height="1296" alt="Mobile acquisition funnel: street count, peel off and customers with 28-day change, a primary metric card and a bar and line chart by entrance." loading="lazy">
+              </div>
+              <figcaption class="fig__caption"><span class="fig-label">Fig. 11</span><span>The acquisition funnel on a phone: street count, peel-off, customers.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <span class="block__n">3.3</span>
+        <div class="block__text">
+          <h3 class="long-primer">Winning over store managers.</h3>
+          <p>Researching audience personas, I found that retail store managers were resistant to the product. They assumed head office would use it to set them unrealistic targets, and a tool the people on the floor distrust does not get used.</p>
+          <p>My answer was a feature, not a screen: the executive summary with dynamic targets. Targets are forecast from each store's own street traffic and history, with a confidence level shown, so individual stores are evaluated fairly on the metrics their staff can actually influence. Conversion and basket size, not how many people happened to walk past.</p>
+        </div>
+        <div class="block__figs">
+          <figure class="fig fig--wide">
+            <div class="fig__frame">
+              <img src="img/hoxton/target-forecast.png" width="1600" height="1046" alt="Target forecast screen: a confidence indicator of 65 percent, forecast period and forecast basis options including a recommended seasonal basis, and cards for street count forecast, peel-off target, customers dynamic target, conversions, transactions, basket size and sales amount." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 12</span><span>Target forecasting. Pick a period and a basis, see the confidence, and switch any metric to a dynamic target.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 BUILDING IT ============ -->
+  <section class="section section--rule" id="build" aria-labelledby="build-title">
+    <div class="container grid">
+      <header class="section__head">
+        <span class="section__num">04</span>
+        <h2 id="build-title" class="paragon">Building it, not just drawing it</h2>
+        <p class="section__intro">
+          In a startup the design role is wider than the title. Much of the value I added at Hoxton
+          was in product development and in code.
+        </p>
+      </header>
+
+      <div class="block">
+        <span class="block__n">4.1</span>
+        <div class="block__text block__text--wide">
+          <h3 class="long-primer">What the job actually involved.</h3>
+          <ul>
+            <li><strong>Feature ideation.</strong> Dynamic targets and the executive summary came out of persona research I ran, not a ticket. So did the trial welcome page and the inline data-quality warnings.</li>
+            <li><strong>Front-end implementation.</strong> I wrote production CSS and front-end markup for the interfaces I designed, working alongside the engineers, so screens shipped as designed and the components stayed consistent as the product grew.</li>
+            <li><strong>Research and feedback loops.</strong> Regular customer sessions fed directly into the dashboards, the setup journey and the documentation.</li>
+            <li><strong>Documentation and content.</strong> Setup guides, the brand guidelines, data visualisation guidelines, and long-form content marketing.</li>
+            <li><strong>Integrations and channels.</strong> Extending the data beyond the control room: a weekly retail report by email, and store metrics inside Shopify.</li>
+          </ul>
+        </div>
+        <div class="block__figs">
+          <figure class="fig fig--half-l">
+            <div class="fig__frame">
+              <img src="img/hoxton/shopify_1.png" width="1220" height="752" alt="A Shopify-styled chart: store street count by day for last week against the previous week, with a percentage change row beneath." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 13</span><span>Street count inside Shopify, styled to the host platform rather than to Hoxton. Meeting merchants where they already work.</span></figcaption>
+          </figure>
+          <figure class="fig fig--half-r">
+            <div class="fig__frame">
+              <img src="img/hoxton/tech-web.jpg" width="1389" height="1601" alt="Hoxton website technology page on a dark blue ground: A groundbreaking technology platform, with sections on cloud infrastructure, off-the-shelf smart cameras, camera management, and computer vision capabilities of object detection, tracking and event detection." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 14</span><span>Explaining the technology on the website. Being transparent about what the system does was a brand principle, so it needed a page that non-engineers could follow.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 MARKETING ============ -->
+  <section class="section section--rule" id="marketing" aria-labelledby="marketing-title">
+    <div class="container grid">
+      <header class="section__head">
+        <span class="section__num">05</span>
+        <h2 id="marketing-title" class="paragon">Marketing and content</h2>
+        <p class="section__intro">
+          The same brand system carried the website, campaign graphics, sales decks and a
+          whitepaper, all designed and mostly written in-house.
+        </p>
+      </header>
+
+      <div class="block">
+        <span class="block__n">5.1</span>
+        <div class="block__text">
+          <h3 class="long-primer">Showing the product working.</h3>
+          <p>Most of the marketing graphics had one job: make a data product feel concrete. The retail site leads with the weekly report and the funnel it exposes. Social pieces showed occupancy against staffing, or ticket sales against real capacity. The isometric illustrations let us picture a shop, a museum or a whole high street without a single stock photo of a person pointing at a screen.</p>
+        </div>
+        <div class="block__figs">
+          <figure class="fig fig--left">
+            <div class="fig__frame">
+              <img src="img/hoxton/retail-web.jpg" width="1367" height="1589" alt="Hoxton retail website: a yellow hero reading Supercharge your stores with street and entrance count data, a retail report card, and a What you get section listing street footfall, entrance count, transactions, sales, capture rate, conversions and basket size." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 15</span><span>The retail landing page. Yellow leading, gradient hero text, and the report front and centre.</span></figcaption>
+          </figure>
+          <figure class="fig fig--right">
+            <div class="fig__frame">
+              <img src="img/hoxton/hoxton-9.jpg" width="1800" height="1100" alt="Campaign graphics: isometric city, museum with an occupancy chart, shopfronts, a cleaning-schedule phone notification; a headline We're just the ticket above four benefit tiles for increasing ticket sales, customer experience, real-time occupancy and marketing effectiveness." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 16</span><span>Campaign graphics for the leisure sector. One illustration system, many stories.</span></figcaption>
+          </figure>
+          <figure class="fig fig--full">
+            <div class="fig__frame">
+              <img src="img/hoxton/hoxton-10.jpg" width="1800" height="1285" alt="Spreads from the whitepaper A practical guide for managing leisure and hospitality assets: the benefits of occupancy data, including charts of occupancy against count, a customer quote from Techniquest, five key benefits and key takeaways." loading="lazy">
+            </div>
+            <figcaption class="fig__caption"><span class="fig-label">Fig. 17</span><span>The occupancy whitepaper: a practical guide for leisure and hospitality venues, designed as a long read rather than a brochure.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <blockquote class="pull">
+        <p>By discussing it with management, we’re able to easily stay on top of the numbers that matter, and focus our efforts on driving in-store success, rather than on processing data.</p>
+        <footer>David Brinson, Managing Director, GOOD, on the Hoxton retail report</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ 06 TAKEAWAYS ============ -->
+  <section class="section section--rule" id="takeaways" aria-labelledby="takeaways-title">
+    <div class="container grid">
+      <header class="section__head">
+        <span class="section__num">06</span>
+        <h2 id="takeaways-title" class="paragon">What this shows</h2>
+      </header>
+      <div class="takeaways">
+        <div>
+          <h3 class="long-primer">Complex data, made usable.</h3>
+          <p>Live and historical counts, funnels, forecasts and data quality, designed for store managers and venue operators rather than analysts.</p>
+        </div>
+        <div>
+          <h3 class="long-primer">A brand from nothing.</h3>
+          <p>Mission, voice, positioning and a full visual system, documented well enough for a small team to apply it without me in the room.</p>
+        </div>
+        <div>
+          <h3 class="long-primer">Shipped, not handed over.</h3>
+          <p>Features I originated from research, and interfaces I built in production CSS and markup alongside the engineers.</p>
+        </div>
+      </div>
+
+      <nav class="case-nav" aria-label="Case study navigation">
+        <a href="../#work">← All work</a>
+        <a href="../#contact">Get in touch →</a>
+      </nav>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="container grid">
+    <p class="colophon">© <span id="year">2026</span> John Cowen</p>
+    <p class="colophon colophon--right">
+      Hoxton AI product screens and brand assets shown with the company’s original branding. The palette above is rendered from the brand’s own colour values.
+    </p>
+  </div>
+</footer>
+
+<script src="../js/main.js" defer></script>
+</body>
+</html>

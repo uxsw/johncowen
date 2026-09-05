@@ -1,0 +1,256 @@
+/* ==========================================================================
+   Case studies — layered on css/style.css
+   Same grid, type and tokens as the home page. Adds long-form prose,
+   figures with captions, and a live palette.
+   ========================================================================== */
+
+/* ---- Header variant: breadcrumb back to the index ------------------------ */
+.crumb {
+  grid-column: 5 / 11;
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  font-size: var(--brevier);
+  color: var(--ink-2);
+}
+.crumb a { color: var(--ink-2); transition: color 0.2s var(--ease); }
+.crumb a:hover { color: var(--ink); }
+.crumb__sep { color: var(--ink-3); }
+
+/* ---- Case hero ------------------------------------------------------------ */
+.case-hero { padding-block: var(--s7) var(--s6); }
+.case-hero .grid { row-gap: 0; }
+.case-hero__eyebrow {
+  grid-column: 1 / 13;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: var(--s4);
+}
+.case-hero__eyebrow .accent { color: var(--accent); }
+.case-hero__title {
+  grid-column: 1 / 10;
+  margin-bottom: var(--s6);
+}
+.case-hero__lede {
+  grid-column: 1 / 7;
+  color: var(--ink-2);
+  max-width: 36em;
+  text-wrap: pretty;
+}
+.case-hero__meta {
+  grid-column: 8 / 13;
+  display: grid;
+  row-gap: var(--s3);
+}
+.case-hero__meta div {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: var(--s2);
+  padding-top: var(--s2);
+  border-top: 1px solid var(--hair);
+}
+.case-hero__meta dt { padding-top: 0.25rem; }
+.case-hero__meta dd { font-size: var(--brevier); line-height: 1.5; text-wrap: pretty; }
+
+/* ---- Figures -------------------------------------------------------------- */
+.fig { margin: 0; }
+.fig__frame {
+  background: var(--surface);
+  border: 1px solid var(--hair);
+  overflow: hidden;
+}
+.fig__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.fig__frame--pad { padding: clamp(1rem, 4%, 2.5rem); }
+.fig__frame--pad img { background: transparent; }
+.fig__frame--brand { background: #f3eee7; }         /* Hoxton neutral: brand pages keep their own paper */
+.fig__caption {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: var(--s2);
+  font-size: var(--brevier);
+  line-height: 1.5;
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+.fig__caption .fig-label { color: var(--ink); white-space: nowrap; padding-top: 0.2em; }
+
+/* Layout slots inside a .grid */
+.fig--full  { grid-column: 1 / 13; }
+.fig--wide  { grid-column: 2 / 13; }
+.fig--right { grid-column: 7 / 13; }
+.fig--left  { grid-column: 1 / 7; }
+.fig--half-l{ grid-column: 2 / 7; }
+.fig--half-r{ grid-column: 7 / 12; }
+.fig--third { grid-column: span 4; }
+.fig--phone { grid-column: span 3; }
+
+/* Hero logo figure sits on the brand's own neutral */
+.fig--logo { grid-column: 1 / 13; margin-top: var(--s7); }
+.fig--logo .fig__frame {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 21 / 9;
+  min-height: 260px;
+  background: #f3eee7;
+}
+.fig--logo img { width: min(38%, 420px); height: auto; }
+
+/* ---- Prose blocks ---------------------------------------------------------- */
+.block {
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: subgrid;
+  row-gap: var(--s5);
+  padding-block: var(--s5) 0;
+}
+.block + .block { padding-top: var(--s6); }
+.block__n {
+  grid-column: 1 / 2;
+  padding-top: 0.45rem;
+  color: var(--accent);
+}
+.block__text {
+  grid-column: 2 / 7;
+  max-width: 40em;
+}
+.block__text h3 { margin-bottom: var(--s2); }
+.block__text p { color: var(--ink-2); text-wrap: pretty; }
+.block__text p + p { margin-top: var(--s2); }
+.block__text ul { margin-top: var(--s2); display: grid; gap: 0.35rem; color: var(--ink-2); }
+.block__text li { padding-left: 1.1em; position: relative; }
+.block__text li::before { content: "/"; position: absolute; left: 0; color: var(--accent); }
+.block__text--wide { grid-column: 2 / 9; max-width: 48em; }
+.block__figs {
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: subgrid;
+  row-gap: var(--s5);
+  align-items: start;
+}
+
+/* Rows of phones */
+.phones {
+  grid-column: 7 / 13;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gutter);
+  align-items: start;
+}
+.phones .fig__frame { background: transparent; border: 0; }
+
+/* ---- Pull quote ------------------------------------------------------------ */
+.pull {
+  grid-column: 2 / 11;
+  margin: 0;
+  padding: var(--s5) 0;
+  border-top: 1px solid var(--hair);
+  border-bottom: 1px solid var(--hair);
+}
+.pull p {
+  font-family: var(--font-display);
+  font-size: var(--paragon);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+.pull footer {
+  margin-top: var(--s3);
+  font-size: var(--brevier);
+  color: var(--ink-2);
+}
+
+/* ---- Live palette ----------------------------------------------------------- */
+.palette {
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: var(--gutter);
+}
+.palette--secondary { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+.swatch { display: grid; gap: 0.5rem; }
+.swatch__chip {
+  aspect-ratio: 1;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px var(--hair);
+}
+.palette--secondary .swatch__chip { aspect-ratio: 3 / 2; }
+.swatch__name { font-size: var(--brevier); }
+.swatch__hex {
+  font-size: var(--minion);
+  color: var(--ink-3);
+  font-feature-settings: "tnum" 1;
+  letter-spacing: 0.02em;
+}
+
+/* Brand voice list: six principles in two columns */
+.voice {
+  grid-column: 7 / 13;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s3) var(--gutter);
+  align-content: start;
+}
+.voice div { border-top: 1px solid var(--hair); padding-top: var(--s2); }
+.voice dt { font-weight: 500; margin-bottom: 0.25rem; }
+.voice dd { font-size: var(--brevier); color: var(--ink-2); text-wrap: pretty; }
+
+/* ---- Takeaways ------------------------------------------------------------ */
+.takeaways {
+  grid-column: 2 / 13;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s5) var(--gutter);
+}
+.takeaways h3 { margin-bottom: var(--s1); }
+.takeaways p { color: var(--ink-2); text-wrap: pretty; font-size: var(--brevier); line-height: 1.55; }
+
+/* ---- Case footer nav ------------------------------------------------------- */
+.case-nav {
+  grid-column: 1 / 13;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s4);
+  padding-top: var(--s5);
+  border-top: 1px solid var(--hair);
+  font-size: var(--brevier);
+}
+.case-nav a { color: var(--ink-2); border-bottom: 1px solid var(--hair); padding-bottom: 0.1rem; transition: color 0.2s var(--ease), border-color 0.2s var(--ease); }
+.case-nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ---- Responsive ------------------------------------------------------------- */
+@media (max-width: 1100px) {
+  .block__text { grid-column: 2 / 8; }
+  .voice { grid-column: 8 / 13; grid-template-columns: 1fr; }
+  .fig--right, .fig--left, .fig--half-l, .fig--half-r { grid-column: 2 / 13; }
+  .phones { grid-column: 2 / 13; grid-template-columns: repeat(2, minmax(0, 240px)); }
+  .palette { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .palette--secondary { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+  .crumb { grid-column: 1 / 13; grid-row: 2; }
+  .case-hero__title { grid-column: 1 / 13; }
+  .case-hero__lede { grid-column: 1 / 13; margin-bottom: var(--s5); }
+  .case-hero__meta { grid-column: 1 / 13; }
+  .fig--logo .fig__frame { aspect-ratio: 4 / 3; }
+  .fig--logo img { width: 60%; }
+  .block__text, .block__text--wide { grid-column: 2 / 13; }
+  .block__figs > * { grid-column: 1 / 13 !important; }
+  .phones { grid-column: 1 / 13; grid-template-columns: 1fr 1fr; }
+  .pull { grid-column: 1 / 13; }
+  .palette { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-column: 1 / 13; }
+  .palette--secondary { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .voice { grid-column: 2 / 13; grid-template-columns: 1fr 1fr; }
+  .takeaways { grid-column: 1 / 13; grid-template-columns: 1fr; }
+  .fig--third { grid-column: 1 / 13; }
+}
+
+@media (max-width: 560px) {
+  .palette, .palette--secondary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .voice { grid-template-columns: 1fr; }
+  .phones { grid-template-columns: 1fr 1fr; }
+}
