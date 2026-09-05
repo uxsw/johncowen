@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- 35:26 — hairpins up the Alpe, in ink on the maillot jaune. -->
+  <rect width="32" height="32" rx="7" fill="#FFC400"/>
+  <path d="M7 26h14a3 3 0 0 0 0-6H11a3 3 0 0 1 0-6h10a3 3 0 0 0 0-6h-8" fill="none" stroke="#17150F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="9" cy="8" r="2.2" fill="#B8281F"/>
+</svg>
