@@ -88,6 +88,8 @@
     var CELL = 11;                 // CSS px per grid cell
     var SCALE = 0.0042;            // noise frequency
     var SPEED = 0.0030;            // z drift per frame
+    // Hairlines read fine on a desktop; on small high-density screens they vanish.
+    var LINE_W = (window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 900) ? 1.4 : 1;
 
     var w = 0, h = 0, dpr = 1, cols = 0, rows = 0;
     var field = null;
@@ -148,9 +150,11 @@
     }
 
     function recolor() {
-      var cs = getComputedStyle(root);
-      colors.line = cs.getPropertyValue('--line').trim() || colors.line;
-      colors.accent = cs.getPropertyValue('--accent').trim() || colors.accent;
+      // Derived from the theme, not read back from CSS custom properties: iOS WebKit
+      // has returned empty values for those at start-up, leaving the lines black.
+      var dark = currentTheme() === 'dark';
+      colors.line = dark ? 'rgba(227, 223, 213, 0.55)' : 'rgba(27, 26, 23, 0.55)';
+      colors.accent = dark ? '#e8673c' : '#cf4a1f';
       draw();
     }
 
@@ -231,9 +235,9 @@
       for (var l = 1; l <= LEVELS; l++) {
         var t = l / (LEVELS + 1);
         var isAccent = (l === ACCENT_LEVEL);
-        ctx.lineWidth = isAccent ? 1.5 : 1;
+        ctx.lineWidth = isAccent ? LINE_W + 0.5 : LINE_W;
         ctx.strokeStyle = isAccent ? colors.accent : colors.line;
-        ctx.globalAlpha = isAccent ? 1 : (l % 2 === 0 ? 1 : 0.55);
+        ctx.globalAlpha = isAccent ? 1 : (l % 2 === 0 ? 1 : 0.6);
         tracePath(t);
         ctx.stroke();
       }
@@ -276,6 +280,7 @@
     recolor();
     resize();
     start();
+    window.addEventListener('load', recolor);
 
     return { recolor: recolor };
   })();

@@ -240,7 +240,7 @@ main {
 
 /* Prints: portrait works in rows of three, smaller row gap */
 .works--prints { row-gap: 4rem; }
-.ext { margin-left: 0.25em; font-size: 0.85em; }
+.ext { display: inline-block; margin-left: 0.3em; vertical-align: -0.05em; }
 
 /* --------------------------------------------------------------------------
    Footer
